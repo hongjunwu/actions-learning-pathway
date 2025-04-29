@@ -1,0 +1,11 @@
+name: hello-word
+on: push
+jobs:
+  hello-word-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout test
+        uses: actions/checkout@v4
+      - run: echo "${cat hello-world.txt}"
+
+  
